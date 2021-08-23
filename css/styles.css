@@ -1,0 +1,248 @@
+
+body {
+  margin: 0;
+  text-align: center; /* centers everything that doesn't have a width element */
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  color: #40514E;
+}
+
+h1 {
+  /* width: 7%; margin: 0 auto 0 auto;  if an element has defined width then it can be centered by using auto, 0 auto */
+  font-family: 'Rampart One', cursive;
+  font-size: 8rem; /* 100% means 16px, 1em means 16px, if 2em is defined in body and 5 for h1 then h1 will end up being 7em  */
+  margin: 0 auto 0 auto;
+  color: #986D8E;
+}
+
+h2 {
+  font-family: 'Klee One', cursive;
+  font-size: 2.5rem;
+  margin: 10px auto 20px auto;
+  color: #986D8E;
+}
+
+h3 {
+  font-family: 'Klee One', cursive;
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Klee One', cursive;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #986D8E;
+}
+
+hr {
+  width: 5%;
+  border-color: #87A8A4;
+  border-style: dotted none none none;
+  border-width: 5px;
+}
+
+p {
+  line-height: 2;
+}
+
+.footer-link {
+  margin: 20px;
+}
+
+.top-container {
+  background-color: #87A8A4;
+  padding-top: 7%;
+  position: relative; /* in order to position the clouds relative to the top container, otherwise it will move relative to the body */
+}
+
+.middle-container {
+  background-color: #EFE3D0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  position: relative; /* in order to position the clouds relative to the top container, otherwise it will move relative to the body */
+
+}
+
+.bottom-container {
+  background-color: #CDBBA7;
+  position: relative; /* in order to position the clouds relative to the top container, otherwise it will move relative to the body */
+  padding: 20px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 30%;
+  top: 5%;
+  width: 7%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 21%;
+  top: 37%;
+  width: 10%;
+}
+
+.end-page {
+  margin: 0;
+  color: #EAF6F6;
+  font-size: 1rem;
+}
+
+
+.skill-row {
+  margin: 100px auto;
+  width: 50%;
+  text-align: left;
+}
+
+.profile {
+  margin: 60px auto;
+  width: 50%;
+}
+
+.prof-image {
+  width: 150px;
+  border-radius: 100%;
+  background-color: #87A8A4;
+}
+
+.skills {
+  margin: 60px auto;
+}
+
+.contact-me {
+  margin: 60px auto;
+  width: 50%;
+}
+
+.skill-image {
+  width: 150px;
+  float: left;
+  margin-right: 40px;
+}
+
+.skill-image2 {
+  width: 150px;
+  float: right;
+  margin-left: 40px;
+}
+
+.subtitle {
+  font-weight: normal;
+}
+
+.BUTTON_MAC {
+   background: #11999E;
+   background-image: -webkit-linear-gradient(top, #11999E, #11999E);
+   background-image: -moz-linear-gradient(top, #11999E, #11999E);
+   background-image: -ms-linear-gradient(top, #11999E, #11999E);
+   background-image: -o-linear-gradient(top, #11999E, #11999E);
+   background-image: -webkit-gradient(to bottom, #11999E, #11999E);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: 'Klee One', cursive;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 15px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_MAC:hover {
+   border: solid #000000 0;
+   background: #986D8E;
+   background-image: -webkit-linear-gradient(top, #986D8E, #11999E);
+   background-image: -moz-linear-gradient(top, #986D8E, #11999E);
+   background-image: -ms-linear-gradient(top, #986D8E, #11999E);
+   background-image: -o-linear-gradient(top, #986D8E, #11999E);
+   background-image: -webkit-gradient(to bottom, #986D8E, #11999E);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.logo {
+  width: 15% ;
+  margin-top: 10px;
+  position: relative;
+  animation-name: rocket;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+
+@keyframes rocket {
+  0%   {transform: rotate(0deg); left:0; bottom:0;}
+  25%  {transform: rotate(45deg); left:650; bottom:200;}
+  50%  {left:1000px; bottom:1000px;}
+  75%  {left:0px; bottom:1000px;}
+  100% {left:0; bottom:0;}
+}
+
+/*
+
+0%   {transform: rotate(0deg); left:0; bottom:0;}
+10%   {transform: rotate(15deg); left:70; bottom:0;}
+20%  {transform: rotate(25deg); left:200px; bottom:50;}
+30%   {transform: rotate(35deg); left:220; bottom:100;}
+40%  {transform: rotate(45deg); left:300px; bottom:150px;}
+50%   {transform: rotate(45deg); left:350; bottom:200;}
+60%  {transform: rotate(35deg); left:450px; bottom:250px;}
+70%   {transform: rotate(25deg); left:550; bottom:300;}
+80%  {transform: rotate(15deg); left:550px; bottom:350px;}
+90%   { left:600; bottom:400;}
+100% {left:1000px; bottom:1000px;}
+
+
+.code-skill-description {
+  clear: left; /* clear is the antifloat
+}
+
+.code-skill-description2 {
+  clear: right; /* clear is the antifloat
+}
+
+*/
+
+
+
+/*
+.middle-container {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 400px;
+  left: 400px;
+
+}
+
+.bottom-container {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.bottombottom-container {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+*/
